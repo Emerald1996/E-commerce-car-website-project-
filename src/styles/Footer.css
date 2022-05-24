@@ -1,0 +1,141 @@
+.footer_container{
+    background-color: #222;
+    font-family: 'Raleway',
+    sans-serif;
+    line-height: 1.5rem;
+}
+.aside{
+    transform: translate(40%,80%);
+    position: fixed;
+    top: 50%;
+    cursor: pointer;
+}
+.aside img:hover{
+    transform: rotate(360deg);
+    transition: 2s;
+}
+.aside img{
+    width: 100px;
+}
+.aside h4{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50px 0px 50px;
+    text-align: center;
+    text-transform: uppercase;
+    animation: 2s move linear infinite;
+}
+.footer_details{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+.footer_logo img{
+    width: 100px;
+}
+
+.footer_input input{
+    width: 60%;
+    padding: 5px;
+    border-radius: .5rem;
+}
+.form_btn{
+    padding: 5px;
+    color: #fff;
+    background-color: #f00;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+}
+.download_icon{
+    color: rgb(47, 47, 219);
+    animation: 1s slide linear infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(5px);
+    }
+}
+.app_download{
+    display: flex;
+}
+.app_img{
+    display: flex;
+}
+.app_img>img{
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.footer_links{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.about_footers .partners,ul{
+    margin-top: 15px;
+}
+.about_footers .partners, ul li{
+    list-style-type: none;
+    color: rgba(255,255,255, .5);
+}
+.about_footers .partners,
+ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer_socials_payments{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    
+}
+.social_icons{
+    padding: 5px;
+}
+.payment_img img{
+    width: 50px;
+}
+hr{
+    margin-top: 20px;
+}
+.copyright p{
+    text-align: center;
+}
+
+@media(max-width: 768px){
+    .footer_container{
+        width: 100%;
+    }
+    .footer_details{
+        flex-direction: column;
+        padding: 25px 25px;
+        width: 75%;
+    }
+    .footer_links{
+        flex-direction: column;
+        padding: 25px 25px;
+    }
+    .footer_socials_payments{
+        flex-wrap: wrap;
+    }
+    .app_download{
+        margin-top: 20px;
+    }
+    .about_footers .partners{
+        margin-top: 20px;
+    }
+    .policy{
+        width: 50%;
+    }
+    h3{
+        margin-top: 10px;
+    }
+    
+}

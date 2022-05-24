@@ -1,0 +1,14 @@
+.thanks_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #fff;
+    color: #222;
+    padding: 10%;
+}
+.thanks_container img{
+    width: 80%;
+   
+}

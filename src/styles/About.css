@@ -1,0 +1,147 @@
+.about_container_bg {
+        background: url('/src/assets/image14.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: #fff;
+        font-family: 'Raleway',
+        sans-serif;
+        line-height: 1.5rem;
+        overflow: hidden;
+        height: auto;
+        object-fit: cover;
+    }
+    .about_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: auto;
+        margin-top: 15%;
+        
+    }
+    .about_container h1{
+        text-decoration: 5px underline red;
+        letter-spacing: .20rem;
+    }
+    .about_container h2{
+        margin-top: 30px;
+        width: 50%;
+    }
+    .about_container p{
+        margin-top: 10px;
+        width: 100%;
+        text-align: left;
+    }
+    .about_img>img{
+        width: 400px;
+    }
+
+    .more_details{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 75%;
+        margin: auto;
+    }
+    .more_about_details{
+        width: 75%;
+        text-align: center;
+    }
+    .more_details_img{
+        width: 40%;
+    }
+    .more_details_img>img{
+        width: 400px;
+    }
+
+    .why_us_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 20px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .why_us_container .why_us{
+        padding: 0 5px;
+        text-align: center;
+        width: 100%;
+    }
+    .about_icon{
+        color: red;
+    }
+    .option_btns{
+        width: 100%;
+        display: flex;
+    }
+
+     .option_btns>button{
+        width: 100%;
+        padding: 20px;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        margin-top: 15px;
+        text-decoration: none;
+    }
+    .option_btns>button:hover{
+        background-color: #225;
+        transform: translateY(-5px);
+        transition: .5s;
+        color: #fff;
+    }
+    .option_btns button:nth-child(2){
+        background-color: red;
+        transition: .5s;
+    }
+    .option_btns button:nth-child(2):hover {
+        background-color: rgb(221, 113, 113);
+        transform: translateY(-5px);
+    }
+    @media(max-width: 768px){
+        .about_container_bg{
+            object-fit: cover;
+        }
+        .about_container{
+            flex-direction: column;
+            padding: 5% 5%;
+            width: 100%;
+            
+        }
+        .about_container p{
+            width: 80%;
+        }
+        .about_img{
+            width: 80%;
+        }
+        .about_img>img{
+            width: 80%;
+        }
+        .more_details_img>img{
+            width: 80%;
+        }
+        .more_details_img {
+            width: 80%;
+        }
+        .more_details{
+            flex-direction: column;
+        }
+        .why_us_container{
+            flex-direction: column;
+            width: 100%;
+            margin-top: 15%;
+        }
+        .why_us_container .why_us{
+            width: 80%;
+            margin-top: 20%;
+        }
+        .option_btns>button{
+            padding: 20px;
+            border: none;
+            border-radius: 1rem;
+        }
+        
+    }
+

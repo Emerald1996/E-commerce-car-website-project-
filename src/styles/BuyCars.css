@@ -1,0 +1,74 @@
+.buy_container{
+    background-color: #ccc;
+    color: #222;
+    font-family: 'Raleway',
+    sans-serif;
+    
+}
+.car_products_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+.car_products{
+    width: 50%;
+    box-shadow: 0 0 5px #222;
+    border-radius: .5rem;
+    margin: 20px;
+    margin-top: 15%;
+}
+.car_products img{
+    width: 100%;
+    filter: saturate(0);
+    transform: scale(1);
+    transition: .5s;
+}
+.car_products img:hover{
+    filter: saturate(1);
+    transform: scale(1.1);
+    transition: .3s;
+    cursor: pointer;
+}
+.car_products_details{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 20px 10px;
+}
+.car_products_details h2{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    transform: rotate(-10deg);
+    -webkit-text-stroke: 1px #222;
+    color: #fff;
+    text-decoration: 10px underline;
+}
+.buy_btn{
+    padding: 20px;
+    cursor: pointer;
+    background-color: red;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    transition: .4s; 
+}
+.buy_btn:hover{
+    transform: translateY(-5px);
+    background-color: transparent;
+    color: #222;
+    box-shadow: 0 0 5px #f00;
+}
+
+@media(max-width: 768px){
+    .car_products_container{
+        padding-top: 20%;
+    }
+    .car_products{
+        width: 80%;
+    }
+    .car_products img{
+        width: 100%;
+    }
+}
